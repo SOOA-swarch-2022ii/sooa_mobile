@@ -1,19 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Route } from 'react-native';
+import Main from './main.jsx';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>aqui empieza el sooa</Text>
-      <StatusBar style="auto" />
+      <Main />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    flexGrow: 1,
+    backgroundColor: '#333333',
     alignItems: 'center',
     justifyContent: 'center',
   },
