@@ -49,4 +49,13 @@ export const styles = StyleSheet.create({
           fontSize: 30,
           backgroundColor: "#fecc01",
         },
+
+        btnClose: {
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: 65,
+          height: 55,
+          borderRadius: 5,
+          fontSize: 30,
+        },
 }); 

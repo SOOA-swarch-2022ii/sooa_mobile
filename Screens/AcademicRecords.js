@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     },
 
     enunciado:{
-        marginTop: -80,
+        marginTop: -20,
         fontSize: 50,
         color: "#fff",
         fontWeight: "500",

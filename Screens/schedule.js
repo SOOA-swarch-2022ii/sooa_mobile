@@ -7,7 +7,6 @@ import Constants from 'expo-constants';
 const Schedule = () => {
     return (
         <View style={styles.centeredView}>
-          <Image source={Logo} style={styles.logo}/>
             <Text>Hola mundo</Text>
             
         </View>

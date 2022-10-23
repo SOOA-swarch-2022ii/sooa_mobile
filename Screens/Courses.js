@@ -10,7 +10,6 @@ const Courses = () => {
     return (
         <View style={styles.centeredView}>
             
-            <Image source={Logo} style={styles.logo}/>
             <Text>Hola mundo</Text>
             
             
