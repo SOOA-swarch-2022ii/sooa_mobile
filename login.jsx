@@ -6,7 +6,7 @@ import Constants from 'expo-constants';
 import Button from './components/Button/Button.js';
 import Home from "./Screens/Home";
 
-const Main = () => {
+const Login = () => {
     const [view, setView] = useState(false);
     const [valueMail, onChangeTextMail] = React.useState(true);
     const [valuePassword, onChangeTextPassword] = React.useState(true);
@@ -42,7 +42,7 @@ const Main = () => {
     );
 }   
 
-export default Main;
+export default Login;
 
 const styles = StyleSheet.create({
     

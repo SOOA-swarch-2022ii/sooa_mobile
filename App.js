@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Route } from 'react-native';
-import Main from './main.jsx';
+import Login from './login';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Main />
-    </View>
+      <View style={styles.container}>
+        <Login/>
+      </View>
   );
 }
 
