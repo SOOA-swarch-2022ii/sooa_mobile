@@ -3,12 +3,15 @@ import { Alert, Modal, StyleSheet, Text, Image, View, ImageBackground} from "rea
 import back from "../assets/back.png";
 import Logo from "../assets/sooa_logo_2.png";
 import Constants from 'expo-constants';
-
+import calendar from "../assets/calendar.png";
 const Schedule = () => {
     return (
         <View style={styles.centeredView}>
-            <Text>Hola mundo</Text>
             
+            <View style={styles.head}>
+                <Image source={calendar} style={{width:70, height:70}} />
+                <Text style={styles.enunciado}>Horario</Text>
+            </View>
         </View>
     );
     
@@ -38,6 +41,20 @@ const styles = StyleSheet.create({
         justifyContent:'flex-start', 
         alignItems: "flex-start",
         flexDirection:'row',
-
     },
+
+    enunciado:{
+        marginTop: -20,
+        fontSize: 50,
+        color: "#fff",
+        fontWeight: "500",
+        marginLeft:20,
+        
+    },
+
+    head:{
+        flexDirection:'row', 
+        width: "90%", 
+        marginLeft: 10, 
+        alignItems:"center"}
   }); 

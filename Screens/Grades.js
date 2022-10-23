@@ -12,7 +12,7 @@ const Grades = () => {
     const data2 = [{key:'1',value:'Arquitectura de Software'},{key:'2',value:'Metodos numericos'},{key:'3',value:'Computacion paralela'}];
     return (
         <View style={styles.centeredView}>
-            <View style={{flexDirection:'row', width: "90%", marginLeft: "-40%"}}>
+            <View style={styles.head}>
                 <Image source={Notas} style={{width:70, height:70}} />
                 <Text style={styles.enunciado}>Notas</Text>
             </View>
@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "#fff",
     },
+
     enunciado:{
         marginTop: -20,
         fontSize: 50,
@@ -96,4 +97,10 @@ const styles = StyleSheet.create({
         marginLeft:50,
         
     },
+
+    head:{
+        flexDirection:'row', 
+        width: "90%", 
+        marginLeft: "-40%" 
+    }
   }); 
