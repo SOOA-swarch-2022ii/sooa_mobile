@@ -12,8 +12,7 @@ import Schedule from "./schedule";
 import Back from '../components/Button/Back.js';
 import Perfil from "../assets/Perfil.png";
 
-const Home = ({state}) => {
-    const stateLogin = state;
+const Home = () => {
     const [viewProfile, setViewProfile] =                   React.useState(false);
     const [viewAcademicRecords, setViewAcademicRecords] =   React.useState(false);
     const [viewGrades, setViewGrades] =                     React.useState(false);
