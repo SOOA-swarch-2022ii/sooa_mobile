@@ -18,4 +18,4 @@ export const styles = StyleSheet.create({
           color: "black",
           backgroundColor: "#fecc01",
         }
-});
+}); 
