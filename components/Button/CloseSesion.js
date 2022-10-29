@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Image, ImageBackground } from 'react-native';
-import Close from "../../assets/Close.png";
+import Close from "../../assets/close.png";
 
 import { styles } from './styles';
 
