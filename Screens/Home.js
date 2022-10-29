@@ -12,12 +12,14 @@ import Schedule from "./schedule";
 import Back from '../components/Button/Back.js';
 import Perfil from "../assets/Perfil.png";
 
-const Home = () => {
+const Home = ({name, role ,phone ,address ,nationality ,sex ,dateOfBirth, identificationNumber, email}) => {
     const [viewProfile, setViewProfile] =                   React.useState(false);
     const [viewAcademicRecords, setViewAcademicRecords] =   React.useState(false);
     const [viewGrades, setViewGrades] =                     React.useState(false);
     const [viewCourses, setViewCourses] =                   React.useState(false);
     const [viewSchedule, setViewSchedule] =                 React.useState(false);
+    
+
     return (
         <View style={{flex:1}}>
             <View style={styles.centeredView}>
@@ -28,35 +30,35 @@ const Home = () => {
                 
                 <View style={styles.line}>
                     <Text style={styles.titulo}>Nombre: </Text>
-                    <Text style={styles.contenido}>Martin Alonso Gomez Uribe</Text>
+                    <Text style={styles.contenido}>{name}</Text>
                 </View>
                 <View style={styles.line}>
-                    <Text style={styles.titulo}>Fecha nacimiento: </Text>
-                    <Text style={styles.contenido}>17/02/2000</Text>
+                    <Text style={styles.titulo}>Cumpleaños: </Text>
+                    <Text style={styles.contenido}>{dateOfBirth}</Text>
                 </View>
                 <View style={styles.line}>
                     <Text style={styles.titulo}>Sexo: </Text>
-                    <Text style={styles.contenido}>Hombre</Text>
+                    <Text style={styles.contenido}>{sex}</Text>
                 </View>
                 <View style={styles.line}>
                     <Text style={styles.titulo}>Nacionalidad: </Text>
-                    <Text style={styles.contenido}>Colombiano</Text>
+                    <Text style={styles.contenido}>{nationality}</Text>
                 </View>
                 <View style={styles.line}>
                     <Text style={styles.titulo}>Telefono: </Text>
-                    <Text style={styles.contenido}>3057748924</Text>
+                    <Text style={styles.contenido}>{phone}</Text>
                 </View>
                 <View style={styles.line}>
                     <Text style={styles.titulo}>Email: </Text>
-                    <Text style={styles.contenido}>mgomezu@unal.edu.co</Text>
+                    <Text style={styles.contenido}>{email}</Text>
                 </View>
                 <View style={styles.line}>
                     <Text style={styles.titulo}>Direccion: </Text>
-                    <Text style={styles.contenido}>Calle 68a #111c 76</Text>
+                    <Text style={styles.contenido}>{address}</Text>
                 </View>
                 <View style={styles.line}>
                     <Text style={styles.titulo}>N. identificacion: </Text>
-                    <Text style={styles.contenido}>1000514249</Text>
+                    <Text style={styles.contenido}>{identificationNumber}</Text>
                 </View>
             </View>
             <View style={styles.ButtonsView}>
@@ -101,7 +103,7 @@ const Home = () => {
                         }} />
                     <Image source={Logo} style={styles.logoModel}/>
                 </View>
-                    <AcademicRecords state={viewAcademicRecords} />
+                    <AcademicRecords  />
                     
                 </ImageBackground>
             </Modal>
@@ -113,7 +115,7 @@ const Home = () => {
                         }} />
                     <Image source={Logo} style={styles.logoModel}/>
                 </View>
-                        <Courses state={viewCourses} />
+                        <Courses />
                         
                 </ImageBackground>
             </Modal>
@@ -125,7 +127,7 @@ const Home = () => {
                         }} />
                     <Image source={Logo} style={styles.logoModel}/>
                 </View>
-                        <Grades state={viewGrades} />
+                        <Grades/>
                     
                 </ImageBackground>
             </Modal>

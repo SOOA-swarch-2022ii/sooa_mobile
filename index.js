@@ -2,7 +2,28 @@ import { registerRootComponent } from 'expo';
 
 import App from './App';
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in Expo Go or in a native build,
-// the environment is set up appropriately
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+
+
+// Initialize Apollo Client
+
+const client = new ApolloClient({
+
+  uri: 'http://localhost:8090/graphql',
+
+  cache: new InMemoryCache()
+
+});
+
+
+const App = () => (
+
+  <ApolloProvider client={client}>
+
+    <MyRootComponent />
+
+  </ApolloProvider>
+
+);
+
 registerRootComponent(App);
